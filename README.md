@@ -15,12 +15,12 @@ pool: 5
 
 development:
 <<: *default
-database: myapp_development
+database: app_development
 
 
 test:
 <<: *default
-database: myapp_test
+database: app_test
 ```
 - `docker-compose up`
 - `docker-compose run rails_app rake db:create`
